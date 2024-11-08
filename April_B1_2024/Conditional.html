@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 id="demo">Hello</h1>
+        <h2 id="hi">Hi</h2>
+    </div>
+
+    <script>
+        if(new Date().getHours()<12){
+            document.getElementById("demo").innerHTML="GoodMorning"
+        }
+        else{
+            document.getElementById("demo").innerHTML="Welcome"
+        }
+
+        let x=20
+        if (x%2==0){
+            document.getElementById("hi").innerHTML="Number is even..!!"
+        }
+        else{
+            document.getElementById("hi").innerHTML="Number is odd.!!"
+        }
+    </script>
+</body>
+</html>

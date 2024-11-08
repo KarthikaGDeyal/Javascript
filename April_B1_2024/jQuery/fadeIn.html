@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click here to fade down</button>
+    <div class="div1"></div> 
+    <div class="div2"></div> 
+    <div class="div3"></div> 
+
+    <style>
+        .div1{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            display:none;
+
+        }
+        .div2{
+            background-color: rgb(47, 255, 0);
+            width: 100px;
+            height: 100px;
+            display:none;
+        }
+        .div3{
+            background-color: rgb(255, 0, 89);
+            width: 100px;
+            height: 100px;
+            display:none;
+        }
+    </style>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script>
+     $(document).ready(function(){
+        $("button").click(function(){
+            $(".div1").fadeIn(1000);
+            $(".div2").fadeIn(2000);
+            $(".div3").fadeIn(3000);
+        }) 
+    })
+    </script>
+</body>
+</html>          

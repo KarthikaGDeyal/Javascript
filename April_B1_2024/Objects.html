@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>STUDENT DETAILS</h1>
+        <h2 id="name"></h2>
+        <h2 id="age"></h2>
+        <h2 id="place"></h2>
+        <h2 id="course"></h2>
+    </div>
+
+    <script>
+        const Student={
+            Name:"Karthika",
+            Age:25,
+            Place:"Kakkanad",
+            Course:"Python Fullstack"
+        }
+        delete Student.Age
+        delete Student.Course
+        document.getElementById("name").innerHTML="Name : "+Student.Name;
+        document.getElementById("age").innerHTML="Age : "+Student.Age;
+        document.getElementById("place").innerHTML="Place : "+Student.Place;
+        document.getElementById("course").innerHTML="Course : "+Student.Course;
+    </script>
+</body>
+</html>

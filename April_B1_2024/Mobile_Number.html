@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <form action="" name="myform" onsubmit="return Newfunction()">
+            <input type="text" placeholder="Name" name="name" id=""><br><br>
+            <input type="text" placeholder="Mobile Number" name="mobile" id=""><br><br>
+            <button>Register</button>
+        </form>
+    </div>
+
+    <script>
+        function Newfunction(){
+            n=document.myform.name.value;
+            m=document.myform.mobile.value;
+
+            if (n==""||n==null){
+                alert("Name can't be blank..!!")
+                return false;
+            }
+            else if(m==""){
+                alert("Mobile Number can't be blank..!!")
+                return false;
+
+            }
+            else if(m.length!=10){
+                alert("Invalid mobile number..!!")
+                return false;
+        }
+    }
+    </script>
+</body>
+</html>

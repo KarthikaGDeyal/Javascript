@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sum"></h1>
+    <h1 id="sub"></h1>
+    <h1 id="mul"></h1>
+    <h1 id="div"></h1>
+
+    <script>
+        function Addition(p,q){
+            return p+q;
+        }
+        document.getElementById("sum").innerHTML=Addition(1,2)
+
+        function Subtraction(p,q){
+            return p-q;
+        }
+        document.getElementById("sub").innerHTML=Subtraction(4,2)
+
+        function Multiplication(p,q){
+            return p*q;
+        }
+        document.getElementById("mul").innerHTML=Multiplication(1,2)
+
+        function Division(p,q){
+            return p/q;
+        }
+        document.getElementById("div").innerHTML=Division(10,2)
+    </script>
+</body>
+</html>

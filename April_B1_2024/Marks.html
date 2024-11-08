@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="marks">Marks</h1>
+   <h1 id="percentage">Percentage</h1>
+   <h1 id="grade">Grade</h1>
+
+   <script>
+    phy=90
+    che=80
+    bio=78
+    maths=98
+    eng=82
+
+    Total=phy+che+bio+maths+eng;
+    Percentage=(Total/500)*100;
+    document.getElementById("marks").innerHTML="Total Marks : "+ Total;
+    document.getElementById("percentage").innerHTML="Percentage : "+ Percentage + "%";
+
+    if(Percentage>=90){
+        document.getElementById("grade").innerHTML="Grade: A"
+    }
+    
+    else if(Percentage>=80){
+        document.getElementById("grade").innerHTML="Grade: B"
+    }
+    
+    else if(Percentage>=70){
+        document.getElementById("grade").innerHTML="Grade: C"
+    }
+    
+    else if(Percentage>=60){
+        document.getElementById("grade").innerHTML="Grade: D"
+    }
+    else{
+        document.getElementById("grade").innerHTML="FAILED"
+    }
+   </script>
+
+</body>
+</html>
